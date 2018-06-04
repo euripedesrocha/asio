@@ -571,6 +571,7 @@ bool non_blocking_connect(socket_type s, asio::error_code& ec)
 #else // defined(ASIO_WINDOWS)
       // || defined(__CYGWIN__)
       // || defined(__SYMBIAN32__)
+      // || defined(ESP_PLATFORM)
   pollfd fds;
   fds.fd = s;
   fds.events = POLLOUT;
@@ -579,6 +580,7 @@ bool non_blocking_connect(socket_type s, asio::error_code& ec)
 #endif // defined(ASIO_WINDOWS)
        // || defined(__CYGWIN__)
        // || defined(__SYMBIAN32__)
+       // || defined(ESP_PLATFORM)
   if (ready == 0)
   {
     // The asynchronous connect operation is still in progress.
