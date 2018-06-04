@@ -17,9 +17,6 @@
 
 #include "asio/detail/config.hpp"
 
-#ifdef ESP_PLATFORM
-# include "lwip/sockets.h"
-#endif
 
 #if defined(ASIO_HAS_STD_SYSTEM_ERROR)
 # include <system_error>

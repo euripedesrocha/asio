@@ -556,7 +556,12 @@ bool non_blocking_connect(socket_type s, asio::error_code& ec)
   // get spurious readiness notifications from the reactor.
 #if defined(ASIO_WINDOWS) \
   || defined(__CYGWIN__) \
+<<<<<<< HEAD
   || defined(__SYMBIAN32__) 
+=======
+  || defined(__SYMBIAN32__) \
+  || defined(ESP_PLATFORM)
+>>>>>>> 4809bce6 (initial idf port)
   fd_set write_fds;
   FD_ZERO(&write_fds);
   FD_SET(s, &write_fds);
