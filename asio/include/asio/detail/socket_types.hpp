@@ -83,18 +83,10 @@
 # endif
 # include <arpa/inet.h>
 # include <netdb.h>
-<<<<<<< HEAD
 # include <net/if.h>
 # if defined(ESP_PLATFORM)
 #  include "esp_exception.h"
-=======
-# if !defined(ESP_PLATFORM)
-#  include <net/if.h>
-# else
-#  include "esp32_lwip.h"
-
-
->>>>>>> ccbb453c (initial idf port)
+# include <net/if.h>
 # endif
 # include <limits.h>
 # if defined(__sun)
