@@ -21,7 +21,7 @@
 
 #if defined(ASIO_WINDOWS) \
   || defined(__CYGWIN__) \
-  || defined(__SYMBIAN32__) \
+  || defined(__SYMBIAN32__)
 
 #include <cstdlib>
 #include "asio/detail/socket_holder.hpp"

@@ -75,19 +75,15 @@
 #  include <sys/select.h>
 # endif
 # include <sys/socket.h>
-#  include <sys/uio.h>
-#  include <sys/un.h>
+# include <sys/uio.h>
+# include <sys/un.h>
 # include <netinet/in.h>
-# if !defined(__SYMBIAN32__) && !defined(ESP_PLATFORM)
+# if !defined(__SYMBIAN32__)
 #  include <netinet/tcp.h>
 # endif
 # include <arpa/inet.h>
 # include <netdb.h>
 # include <net/if.h>
-# if defined(ESP_PLATFORM)
-#  include "esp_exception.h"
-# include <net/if.h>
-# endif
 # include <limits.h>
 # if defined(__sun)
 #  include <sys/filio.h>

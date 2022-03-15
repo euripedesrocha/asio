@@ -17,7 +17,6 @@
 
 #include "asio/detail/config.hpp"
 
-
 #if defined(ASIO_HAS_STD_SYSTEM_ERROR)
 # include <system_error>
 #else // defined(ASIO_HAS_STD_SYSTEM_ERROR)
